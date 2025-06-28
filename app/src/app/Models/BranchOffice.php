@@ -13,9 +13,9 @@ class BranchOffice extends Model
 
     /**
      * Contoh relasi (jika suatu saat sesi dikaitkan dengan cabang)
-     * public function sessions(): HasMany
+     * public function sesi(): HasMany
      * {
-     *     return $this->hasMany(Session::class);
+     *     return $this->hasMany(Sesi::class);
      * }
      */
 }

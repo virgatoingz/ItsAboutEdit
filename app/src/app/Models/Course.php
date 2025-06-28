@@ -15,9 +15,9 @@ class Course extends Model
     /**
      * Relasi: course memiliki banyak sesi
      */
-    public function sessions(): HasMany
+    public function sesi(): HasMany
     {
-        return $this->hasMany(Session::class);
+        return $this->hasMany(Sesi::class);
     }
 
     /**

@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Session extends Model
+class Sesi extends Model
 {
     use HasFactory;
-    protected $table = 'sessions';
+    protected $table = 'sesi';
     protected $guarded = ['id'];
 
     /**

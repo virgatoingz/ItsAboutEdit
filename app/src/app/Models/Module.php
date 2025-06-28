@@ -15,8 +15,8 @@ class Module extends Model
     /**
      * Relasi: modul milik satu sesi
      */
-    public function session(): BelongsTo
+    public function sesi(): BelongsTo
     {
-        return $this->belongsTo(Session::class);
+        return $this->belongsTo(Sesi::class);
     }
 }

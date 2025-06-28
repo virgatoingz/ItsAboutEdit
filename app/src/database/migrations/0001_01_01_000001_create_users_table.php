@@ -18,6 +18,24 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('phone_number');
+            $table->text('address');
+            $table->string('nik');
+            $table->string('job_title');
+            $table->foreignId('department_id')->constrained('departments');
+            $table->enum('employment_status', ['active', 'inactive']);
+            $table->date('onboarding_date');
+            $table->string('expertise_area')->nullable();
+            $table->enum('teaching_status', ['active', 'inactive'])->nullable();
+            $table->enum('role', [
+                'admin_company', 
+                'admin_hrm', 
+                'admin_lms', 
+                'admin_akademik', 
+                'admin_hr', 
+                'teacher', 
+                'student'
+            ]);
             $table->rememberToken();
             $table->timestamps();
         });
